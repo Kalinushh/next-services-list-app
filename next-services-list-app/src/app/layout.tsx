@@ -7,7 +7,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="text-[rgb(var(--text-main))]">{children}</body>
     </html>
   );
 }
