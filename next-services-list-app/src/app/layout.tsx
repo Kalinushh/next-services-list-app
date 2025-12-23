@@ -1,4 +1,5 @@
 import './globals.css';
+import { StoreProvider } from './providers/StoreProvider';
 
 export default function RootLayout({
   children,
@@ -7,7 +8,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="text-[rgb(var(--text-main))]">{children}</body>
+      <body className="text-[rgb(var(--text-main))]">
+        <StoreProvider>{children}</StoreProvider>
+      </body>
     </html>
   );
 }
