@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+:root {
+  --list-bg: 253 211 232;
+  --text-main: 34 34 34;
+  --btn-active: 253 211 232;
+  --btn-inactive: 181 178 188;
+}
+
+@layer base {
+  h2 {
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.4;
+  }
+}
 /**
   Нормализация блочной модели
  */
